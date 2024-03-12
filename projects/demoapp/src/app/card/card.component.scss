@@ -1,0 +1,87 @@
+.preview {
+  object-fit: cover;
+  width: 100%;
+  height: 8rem;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.content {
+  padding: var(--md-sys-size-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--md-sys-size-2);
+}
+
+.tags {
+  display: flex;
+  gap: var(--md-sys-size-2);
+
+  .tag {
+    text-transform: uppercase;
+    font: var(--md-sys-typescale-label-small-weight) var(--md-sys-typescale-label-small-size) / var(--md-sys-typescale-label-small-line-height) var(--md-sys-typescale-label-small-font);
+    letter-spacing: var(--md-sys-typescale-label-small-tracking);
+
+    &:nth-child(2) {
+      opacity: .6;
+    }
+
+    &:nth-child(3) {
+      opacity: .4;
+    }
+
+    &:nth-child(4) {
+      opacity: .2;
+    }
+  }
+}
+
+.title {
+  font: var(--md-sys-typescale-title-large-weight) var(--md-sys-typescale-title-large-size) / var(--md-sys-typescale-title-large-line-height) var(--md-sys-typescale-title-large-font);
+  letter-spacing: var(--md-sys-typescale-title-large-tracking);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font: var(--md-sys-typescale-body-large-weight) var(--md-sys-typescale-body-large-size) / var(--md-sys-typescale-body-large-line-height) var(--md-sys-typescale-body-large-font);
+  letter-spacing: var(--md-sys-typescale-body-large-tracking);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--md-sys-size-2);
+
+  .action {
+    border-radius: var(--md-sys-size-4);
+    padding: var(--md-sys-size-2) var(--md-sys-size-4);
+    border: 0.0625rem solid var(--md-sys-color-primary);
+    color: var(--md-sys-color-primary);
+    font: var(--md-sys-typescale-label-large-weight) var(--md-sys-typescale-label-large-size) / var(--md-sys-typescale-label-large-line-height) var(--md-sys-typescale-label-large-font);
+    letter-spacing: var(--md-sys-typescale-label-large-tracking);
+
+    &.primary {
+      background: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+    }
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--md-sys-size-4);
+  background: var(--md-sys-surface-container);
+  border: 1px solid var(--md-sys-color-outline);
+
+  transition: box-shadow .3s ease;
+
+  @media (hover) {
+    &:hover {
+      box-shadow: 0 0 2rem rgba(0, 0, 0, .4);
+    }
+  }
+}

@@ -1,3 +1,37 @@
 :root {
-  --md-sys-color-primary: blue;
+  --md-sys-size-1: .25rem;
+  --md-sys-size-2: .5rem;
+  --md-sys-size-4: 1rem;
+  --md-sys-surface-container: #F3EDF7;
+
+  --md-sys-color-primary: #6750A4;
+  --md-sys-color-on-primary: white;
+  --md-sys-color-outline: #8e9199;
+  --md-ref-typeface-brand: Roboto, "Road rage", sans-serif;
+  --md-ref-typeface-weight-regular: 400;
+  --md-ref-typeface-weight-medium: 500;
+
+  --md-sys-typescale-title-large-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-title-large-line-height: 1.75rem;
+  --md-sys-typescale-title-large-size: 1.375rem;
+  --md-sys-typescale-title-large-tracking: 0;
+  --md-sys-typescale-title-large-weight: var(--md-ref-typeface-weight-regular);
+
+  --md-sys-typescale-label-small-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-label-small-line-height: 1rem;
+  --md-sys-typescale-label-small-size: 0.6875rem;
+  --md-sys-typescale-label-small-tracking: 0.03125rem;
+  --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
+
+  --md-sys-typescale-body-large-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-body-large-line-height: 1.5rem;
+  --md-sys-typescale-body-large-size: 1rem;
+  --md-sys-typescale-body-large-tracking: 0.03125rem;
+  --md-sys-typescale-body-large-weight: var(--md-ref-typeface-weight-regular);
+
+  --md-sys-typescale-label-large-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-label-large-line-height: 1.25rem;
+  --md-sys-typescale-label-large-size: 0.875rem;
+  --md-sys-typescale-label-large-tracking: 0.00625rem;
+  --md-sys-typescale-label-large-weight: var(--md-ref-typeface-weight-medium);
 }
